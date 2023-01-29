@@ -68,16 +68,20 @@ if __name__ == "__main__":
             speak(results)
 
         elif 'open youtube' in query:
+            speak("opening youtube")
             wb.open("youtube.com")
 
         elif 'open google' in query:
+            speak("opening google")
             wb.open("google.com")
 
         elif 'open stackoverflow' in query:
+            speak("opening stackoverflow")
             wb.open("stackoverflow.com")   
 
 
         elif 'play music' in query:
+            speak("alright., here we go")
             wb.open("https://www.youtube.com/watch?v=o4aumjnQJYo")
         
 
@@ -93,27 +97,28 @@ if __name__ == "__main__":
             wb.open("gmail.com")   #Most of us use gmail. So, I've written the code compatible to gmail. You can change it as per your preferred mail service provider. 
         
         elif 'open whatsApp' in query:
+            speak("opening whatsApp")
             wb.open("web.whatsapp.com")
 
         elif 'open spotify' in query:
+            speak("opening spotify")
             wb.open("open.spotify.com")
 
         elif 'open snapchat' in query:
+            speak("opening snapchat")
             wb.open("web.snapchat.com")  
 
         elif 'quit' in query:
             exit()  
 
         elif 'go away' in query:
-            engine.say("cool")
+            speak("cool")
             exit()  
 
         elif 'get lost' in query:
-            engine.say("Cool, bye") 
+            speak("Cool, bye") 
             exit()
 
         elif 'bye' in query:
-            engine.say("bye")
+            speak("bye")
             exit()
-
-
